@@ -8481,3 +8481,181 @@ Migrating to CreateUsers (20230130051337)
   [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
   [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('892336952976185220')[0m
   [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('892336952976185220', 0)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateUsers (20230130062028)
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `username` varchar(255), `email` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('892336952976185220')[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('892336952976185220', 0)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateUsers (20230130062028)
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `username` varchar(255), `email` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('892336952976185220')[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('892336952976185220', 0)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('892336952976185220')[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('892336952976185220', 0)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('892336952976185220')[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('892336952976185220', 0)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('892336952976185220')[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('892336952976185220', 0)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('892336952976185220')[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('892336952976185220', 0)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT RELEASE_LOCK('892336952976185220')[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK('892336952976185220', 0)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to DropArticles (20230130062648)
+  [1m[35m (19.9ms)[0m  [1m[35mDROP TABLE `users`[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20230130062648')[0m
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('892336952976185220')[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('892336952976185220', 0)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateUsers (20230130062750)
+  [1m[35m (24.2ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `username` varchar(255), `email` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20230130062750')[0m
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('892336952976185220')[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO `users` (`username`, `email`, `created_at`, `updated_at`) VALUES ('Himanshu', 'himanshu@gmail.com', '2023-01-30 06:34:27.415877', '2023-01-30 06:34:27.415877')[0m
+  [1m[36mTRANSACTION (5.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO `users` (`username`, `email`, `created_at`, `updated_at`) VALUES ('Seejal', 'seeju@gmail.com', '2023-01-30 06:34:52.659889', '2023-01-30 06:34:52.659889')[0m
+  [1m[36mTRANSACTION (5.5ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2023-01-31 12:16:29 +0530
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 337)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.8ms | Allocations: 11074)
+Completed 200 OK in 64ms (Views: 41.0ms | ActiveRecord: 0.0ms | Allocations: 14340)
+
+
+Started GET "/articlees" for 127.0.0.1 at 2023-01-31 12:16:34 +0530
+Processing by ArticleesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articlees/index.html.erb within layouts/application
+  [1m[36mArticlee Load (3.7ms)[0m  [1m[34mSELECT `articlees`.* FROM `articlees`[0m
+  ↳ app/views/articlees/index.html.erb:13
+  Rendered articlees/index.html.erb within layouts/application (Duration: 26.9ms | Allocations: 5510)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.5ms | Allocations: 8748)
+Completed 200 OK in 49ms (Views: 28.4ms | ActiveRecord: 9.9ms | Allocations: 10756)
+
+
+  [1m[36mArticlee Load (1.4ms)[0m  [1m[34mSELECT `articlees`.* FROM `articlees`[0m
+Started GET "/articlees" for 127.0.0.1 at 2023-01-31 12:41:29 +0530
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ArticleesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articlees/index.html.erb within layouts/application
+  [1m[36mArticlee Load (1.3ms)[0m  [1m[34mSELECT `articlees`.* FROM `articlees`[0m
+  ↳ app/views/articlees/index.html.erb:13
+  Rendered articlees/index.html.erb within layouts/application (Duration: 14.9ms | Allocations: 5715)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.9ms | Allocations: 12594)
+Completed 200 OK in 55ms (Views: 26.3ms | ActiveRecord: 4.9ms | Allocations: 16645)
+
+
+Started GET "/articlees/10" for 127.0.0.1 at 2023-01-31 12:41:36 +0530
+Processing by ArticleesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticlee Load (1.8ms)[0m  [1m[34mSELECT `articlees`.* FROM `articlees` WHERE `articlees`.`id` = 10 LIMIT 1[0m
+  ↳ app/controllers/articlees_controller.rb:54:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articlees/show.html.erb within layouts/application
+  Rendered articlees/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 193)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 3392)
+Completed 200 OK in 13ms (Views: 5.9ms | ActiveRecord: 1.8ms | Allocations: 5394)
+
+
+Started GET "/articlees/new" for ::1 at 2023-01-31 15:13:28 +0530
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ArticleesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articlees/new.html.erb within layouts/application
+  Rendered articlees/new.html.erb within layouts/application (Duration: 4.9ms | Allocations: 3274)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.3ms | Allocations: 10103)
+Completed 200 OK in 52ms (Views: 21.0ms | ActiveRecord: 4.0ms | Allocations: 18081)
+
+
+Started GET "/articlees/new" for ::1 at 2023-01-31 15:13:29 +0530
+Processing by ArticleesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articlees/new.html.erb within layouts/application
+  Rendered articlees/new.html.erb within layouts/application (Duration: 14.2ms | Allocations: 910)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.2ms | Allocations: 3963)
+Completed 200 OK in 43ms (Views: 40.1ms | ActiveRecord: 0.0ms | Allocations: 4514)
+
+
+Started GET "/articlees/1" for ::1 at 2023-01-31 15:13:36 +0530
+Processing by ArticleesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticlee Load (0.8ms)[0m  [1m[34mSELECT `articlees`.* FROM `articlees` WHERE `articlees`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/articlees_controller.rb:54:in `show'
+Completed 404 Not Found in 5ms (ActiveRecord: 0.8ms | Allocations: 2070)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Articlee with 'id'=1):
+  
+app/controllers/articlees_controller.rb:54:in `show'
+  [1m[36mArticlee Load (0.6ms)[0m  [1m[34mSELECT `articlees`.* FROM `articlees`[0m
+Started GET "/articlees/4" for ::1 at 2023-01-31 15:15:39 +0530
+Processing by ArticleesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mArticlee Load (14.3ms)[0m  [1m[34mSELECT `articlees`.* FROM `articlees` WHERE `articlees`.`id` = 4 LIMIT 1[0m
+  ↳ app/controllers/articlees_controller.rb:54:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articlees/show.html.erb within layouts/application
+  Rendered articlees/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 162)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 3339)
+Completed 200 OK in 46ms (Views: 20.2ms | ActiveRecord: 14.3ms | Allocations: 4665)
+
+
+Started GET "/articlees" for ::1 at 2023-01-31 15:15:45 +0530
+Processing by ArticleesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articlees/index.html.erb within layouts/application
+  [1m[36mArticlee Load (2.2ms)[0m  [1m[34mSELECT `articlees`.* FROM `articlees`[0m
+  ↳ app/views/articlees/index.html.erb:13
+  Rendered articlees/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 1191)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 4201)
+Completed 200 OK in 14ms (Views: 10.8ms | ActiveRecord: 2.2ms | Allocations: 4723)
+
+
+Started GET "/article/new" for ::1 at 2023-01-31 15:25:03 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/article/new"):
+  

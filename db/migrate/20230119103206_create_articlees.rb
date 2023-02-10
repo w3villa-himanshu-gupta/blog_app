@@ -4,6 +4,7 @@ class CreateArticlees < ActiveRecord::Migration[6.1]
       # t.column :id , 'int(11) PRIMARY KEY'
       t.string :title
       t.text :description
+      t.references :user , null: false ,foreign_key: true
 
       t.timestamps
     end

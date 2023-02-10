@@ -1,12 +1,41 @@
+<div id="page-content">
+<h1 class ="text-center mt-4">Listing All Articles</h1>
+<div class="container">
+    <% @articlees .each do |article| %>
+    <div class="row justify-content-md-center">
+        <div class="col-8 mt-4 ">
+    <div class="card text-center shadow  mb-5 bg-body rounded">
+    <div class="card-header">
+        Created by Himanshu
+    </div>
+    <div class="card-body">
+        <h5 class="card-title"><%=link_to article.title ,articlee_path(article) ,class: "text-success text-decoration-none"%></h5>
+        <p class="card-text"><%= truncate(article.description , length: 100) %></p>
+        <%# <%= link_to 'show' ,articlee_path(article),class: "btn btn-outline-danger" %> 
+        <%= link_to 'edit' ,edit_articlee_path(article) , class: "btn btn-outline-primary" %>
+        <%= link_to 'delete' ,articlee_path(article),class: "btn btn-outline-warning", method: :delete, data: {confirm: "ARe you sure ? "} %>
+        <%= link_to 'Add Post' ,new_post_path(:articlee_id => article.id),class:"btn btn-outline-danger" %>
+        <%= link_to 'See Post' , show_post_articlee_path(article) , class:"btn btn-outline-info" %>
+    </div>
+    <div class="card-footer text-muted">
+        <small> Created  <%= time_ago_in_words(article.created_at)%> ago,
+                edited <%= time_ago_in_words(article.updated_at) %> ago</small>
+    </div>
+    </div>
+    </div>
+    </div>
+    <% end %>
+</div>
 
+</div>
 
-<table border="1" >
+<!-- <table >
 
     <thead>
         <tr>
             <th>Title</th>
             <th>Description</th>
-            <th>Actions</th>
+            <th colspan="4" >Actions</th>
         </tr>
     </thead>
     <tbody>
@@ -14,10 +43,18 @@
         <tr>
             <td><%= article.title%></td>
             <td><%= article.description %></td>
-            <td>Some Actions</td>
+            <td><%= link_to 'show' ,articlee_path(article) %></td>
+            <td><%= link_to 'edit' ,edit_articlee_path(article) %></td>
+            <td><%= link_to 'delete' ,articlee_path(article), method: :delete, data: {confirm: "ARe you sure ? "} %></td>
+            <td><%= link_to 'Add Post' ,new_post_path(:articlee_id => article.id) %></td>
+
+
+
         </tr>
         <% end %>
         
     </tbody>
    
 </table>
+<%= link_to 'Create New Article' ,new_articlee_path %>
+-->

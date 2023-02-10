@@ -1,0 +1,55 @@
+<div id="page-content">
+<h1 class ="text-center mt-4">Listing All Posts</h1>
+<div class="container">
+    <% @posts .each do |post| %>
+    <div class="row justify-content-md-center">
+        <div class="col-8 mt-4 ">
+    <div class="card text-center shadow  mb-5 bg-body rounded">
+    <div class="card-header">
+        Post of Article Id is : <%= post.articlee_id%>
+    </div>
+    <div class="card-body">
+        <h5 class="card-title"><%=link_to post.articlee_id,post_path(post) ,class: "text-success text-decoration-none"%></h5>
+        <p class="card-text"><%= truncate(post.name , length: 100) %></p>
+        
+        <%= link_to 'edit' ,edit_post_path(post) , class: "btn btn-outline-primary" %>
+        <%= link_to 'delete' ,post_path(post),class: "btn btn-outline-warning", method: :delete, data: {confirm: "ARe you sure ? "} %>
+        
+    </div>
+    <div class="card-footer text-muted">
+        <small> Created  <%= time_ago_in_words(post.created_at)%> ago,
+                edited <%= time_ago_in_words(post.updated_at) %> ago</small>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <% end %>
+
+</div>
+
+</div>
+<!--<table border="1">
+<thead>
+<tr>
+<th>Name</th>
+<th>Article_id</th>
+<th colspan="3">Actions</th>
+</tr>
+</thead>
+<tbody>
+<% @posts .each do |post| %>
+<tr>
+<td><%= post.name%></td>
+<td><%= post.articlee_id%></td>
+<td><%= link_to 'show' ,post_path(post) %></td>
+<td><%= link_to 'edit' ,edit_post_path(post) %></td>
+
+<td><%= link_to 'Delete' , post_path(post), method: :delete, data: {confirm: "Are you sure?"}%></td>
+
+</tr>
+<% end %>
+</tbody>
+</table>
+
+<button><%= link_to 'Article Lists' ,articlees_path %> </button>

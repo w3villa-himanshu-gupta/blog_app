@@ -1,0 +1,43 @@
+@import "bootstrap/dist/css/bootstrap";
+.navbar {
+    background-color: rgb(37, 135, 247) !important;
+}
+.nav-link{
+     color: white !important;
+     font-weight:bolder;
+}
+#logo{
+    float: left;
+    font-size: 1.7em;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+#home-container{
+    margin-top: 25px;
+    // background-color: lightgray !important;
+}
+.jumbotron{
+    background-image: asset-url("writing.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 425px;
+
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    // background-color: lightgrey;
+    // background-image: url();
+}
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+  background-color: lightgrey !important;
+}

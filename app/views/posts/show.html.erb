@@ -1,0 +1,6 @@
+<h1>Show posts</h1>
+<h2>Name : </h2> <%= @post.name%>
+<h2>Article_id : </h2> <%= @post.articlee_id%><br>
+<%= link_to 'edit' ,edit_post_path(@post) %> |
+<%= link_to 'Delete' , post_path(@post), method: :delete, data: {confirm: "Are you sure?"}%>|
+<%= link_to 'Return to Post list' ,posts_path %>

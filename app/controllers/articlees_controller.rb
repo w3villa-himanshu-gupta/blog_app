@@ -32,7 +32,8 @@ class ArticleesController < ApplicationController
     end
     def create
         # render plain: params[:articlee]
-        @articlee = Articlee.new(params.require(:articlee).permit(:title , :description))
+        @articlee = Articlee.new(params.require(:articlee).permit(:title ,:description))
+        @articlee.user = User.first
         # @articlee.save
         # redirect_to @articlee
         # render plain: @articlee
@@ -54,9 +55,24 @@ class ArticleesController < ApplicationController
         @articlee = Articlee.find(params[:id])
 
     end
+    def destroy
+        @articlee = Articlee.find(params[:id])
+        @articlee.destroy
+        redirect_to articlees_path
+
+
+    end
    
 
-
+    def show_post
+        @articlee = Articlee.find(params[:id])
+        @posts = @articlee.posts
+    end 
+    # def articlee_posts
+    #     @articlee = Articlee.find(params[:id])
+    #     @posts = @articlee.posts
+        
+    # end
 
 
 end

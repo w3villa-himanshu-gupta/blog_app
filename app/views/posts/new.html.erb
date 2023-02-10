@@ -1,0 +1,22 @@
+<div id="page-content">
+<h1 class ="text-center mt-4">Create a new Article</h1>
+<div class="row justify-content-center ">
+            <div class="col-10">
+<%= form_with scope: :post ,url: posts_path, local: true do |form|%>
+<%= form.label :name %>
+<%= form.text_field :name%><br>
+
+<%= form.hidden_field :articlee_id, value: params[:articlee_id] %>
+
+<%= form.submit%>
+<% end %>
+
+  </div>
+        
+            <div class = "text-center mt-4 ">
+            <%= link_to '[Cancel and return to Post List ]' , posts_path %> 
+            </div>
+      
+
+        </div >
+</div>

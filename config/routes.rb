@@ -10,5 +10,10 @@ Rails.application.routes.draw do
     end 
   end 
   resources :posts
+  get "signup" , to:'users#new'
+  # post 'users' , to: 'user#create'
+  resources :users, expect: [:new]
+
+  # get
   # resources :articlees , only: [:show, :index , :new , :create ,:edit, :update,:destroy]
 end

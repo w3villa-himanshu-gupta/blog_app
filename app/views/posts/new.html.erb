@@ -1,5 +1,7 @@
 <div id="page-content">
 <h1 class ="text-center mt-4">Create a new Article</h1>
+    <%= render "shared/errors" , obj: @post %>
+
 <div class="row justify-content-center ">
             <div class="col-10">
 <%= form_with scope: :post ,url: posts_path, local: true do |form|%>
